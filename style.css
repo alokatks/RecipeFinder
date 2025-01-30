@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    background: url('https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.jpg?s=612x612&w=0&k=20&c=eaKRSIAoRGHMibSfahMyQS6iFADyVy1pnPdy1O5rZ98=');
+    padding: 60px 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.container h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color:#a40f4b
+}
+
+.container p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color:rgb(42, 142, 165); 
+}
+
+.searchbox {
+    max-width: 300px;
+    background: white;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 4px 10px rgba(109, 62, 62, 0.2);
+}
+
+.searchbox input {
+    padding: 12px 15px;
+    width: 70%;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.searchbox button {
+    padding: 12px 20px;
+    background: rgb(228, 69, 69);
+    border: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.searchbox button:hover {
+    background: rgb(188, 50, 50);
+}
+
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.popup-card {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.close-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #ff1a1a;
+}
+
+#recipeTitle {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#recipeDetails {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
